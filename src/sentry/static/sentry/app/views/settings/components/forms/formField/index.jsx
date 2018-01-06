@@ -27,6 +27,7 @@ const FormFieldControlErrorWrapper = styled(Box)`
 `;
 
 const FormFieldControlWrapper = styled(Flex)`
+  flex-shrink: 0;
   overflow: hidden;
 `;
 
@@ -234,7 +235,7 @@ class FormField extends React.Component {
         </FormFieldDescription>
 
         <FormFieldControlErrorWrapper>
-          <FormFieldControlWrapper shrink="0">
+          <FormFieldControlWrapper>
             <FormFieldControl flex="1">
               <Observer>
                 {() => {
